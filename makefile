@@ -4,7 +4,7 @@ OBJS0	= ./calcApp/TRPO_Calculator.o ./calcApp/TRPO_Functions.o
 SOURCE0	= ./calcApp/TRPO_Calculator.cpp ./calcApp/TRPO_Functions.cpp
 HEADER0	= ./calcApp/TRPO_Functions.h
 OUT0	= 
-
+BIN_DIR = ./bin
 OBJS1	= ./test/main.o
 SOURCE1	= ./test/main.cpp
 HEADER1	= 
@@ -16,10 +16,10 @@ FLAGS	 = -g -c -Wall
 all: tost pizza
 
 tost: $(OBJS0)
-	$(CC) -g $(OBJS0) -o $(OUT0)
+	$(CC) -g $(OBJS0) -o $(BIN_DIR)/main
 
 pizza: $(OBJS1)
-	$(CC) -g $(OBJS1) -o $(OUT1)
+	$(CC) -g $(OBJS1) -o $(BIN_DIR)/main
 
 TRPO_Calculator.o: ./calcApp/TRPO_Calculator.cpp
 	$(CC) $(FLAGS) ./calcApp/TRPO_Calculator.cpp 
