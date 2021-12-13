@@ -3,12 +3,12 @@ OUT     =
 OBJS0	= ./calcApp/TRPO_Calculator.o ./calcApp/TRPO_Functions.o
 SOURCE0	= ./calcApp/TRPO_Calculator.cpp ./calcApp/TRPO_Functions.cpp
 HEADER0	= ./calcApp/TRPO_Functions.h
-OUT0	= tost.exe
+OUT0	= 
 
 OBJS1	= ./test/main.o
 SOURCE1	= ./test/main.cpp
 HEADER1	= 
-OUT1	= pizza.exe
+OUT1	= 
 
 CC	 = g++
 FLAGS	 = -g -c -Wall
