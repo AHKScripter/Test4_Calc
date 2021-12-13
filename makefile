@@ -13,7 +13,7 @@ OUT1	=
 CC	 = g++
 FLAGS	 = -g -c -Wall
 
-all: tost pizza
+all: $(BIN_DIR)/main
 
 tost: $(OBJS0)
 	$(CC) -g $(OBJS0) -o $(BIN_DIR)/main
@@ -29,7 +29,8 @@ TRPO_Functions.o: ./calcApp/TRPO_Functions.cpp
 
 main.o: ./test/main.cpp
 	$(CC) $(FLAGS) ./test/main.cpp 
-
+run: 
+	./bin/main
 
 clean:
 	rm -f $(OBJS) $(OUT)
