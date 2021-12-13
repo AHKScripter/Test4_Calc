@@ -1,6 +1,5 @@
 OBJS	= ./calcApp/TRPO_Calculator.o ./calcApp/TRPO_Functions.o ./test/main.o
-OUT	= tost,pizza
-
+OUT     = 
 OBJS0	= ./calcApp/TRPO_Calculator.o ./calcApp/TRPO_Functions.o
 SOURCE0	= ./calcApp/TRPO_Calculator.cpp ./calcApp/TRPO_Functions.cpp
 HEADER0	= ./calcApp/TRPO_Functions.h
